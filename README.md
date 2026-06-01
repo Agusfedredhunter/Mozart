@@ -1,16 +1,19 @@
 # Trabajo Práctico N°4 - API REST Alumnos
 
 ## 👥 Número de grupo e integrantes
-- **Grupo:** 0 *(Completá tu número de grupo acá, crack)*
+- **Grupo:** 15
 - **Integrantes:** 
-  - [Nombre Apellido 1]
-  - [Nombre Apellido 2]
-  - [Nombre Apellido 3]
+  - [Moore Andy]
+  - [Fedigatti Augusto]
+  - [Morel Ramiro]
+  - [Lima Jesus]
+  - [Urdampilleta Iñaki]
+  - [Pelizza Joaquin]
 *(¡Acuérdense de poner sus nombres, changos!)*
 
 ## 🚀 Nombre del proyecto y su descripción
 **API de Gestión de Alumnos - TP4**
-Básicamente, armamos una API RESTful con Node.js, Express y TypeScript. Sirve para gestionar alumnos con CRUD completo. La data la guardamos en un archivo JSON para que quede persistente y no se pierda nada cuando se apaga el server. Le metimos arquitectura MVC y Programación Orientada a Objetos (POO) para que el código quede con buena cálidad. Además, le mandamos validaciones con `express-validator` para que nadie mande cosas que no correspondan.
+Armamos una API RESTful con Node.js, Express y TypeScript. Sirve para gestionar alumnos con CRUD completo. La data la guardamos en un archivo JSON para que quede persistente y no se pierda nada cuando se apaga el server. Le hicimos la arquitectura MVC y Programación Orientada a Objetos (POO) para que el código quede con buena cálidad. Además, le hicimos validaciones con `express-validator` para que nadie mande cosas que no correspondan.
 
 ## 🛠️ Metodología de trabajo con Git y GitHub
 Para no pisarnos el código usamos Git y GitHub. 
