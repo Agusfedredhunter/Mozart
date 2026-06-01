@@ -51,10 +51,10 @@ Dockerfile     -> Para armar el contenedor y que corra igual en la máquina de c
 
 ## 📦 Documentación con 'Postman' de todos los métodos
 Acá está la colección con todos los métodos (GET, PUT, DELETE, POST):
-👉 **[Reemplazar por el Link a la colección de Postman publicada]**
+👉 **[https://drive.google.com/drive/folders/1WhVTXPEtSq13iLnyT_ZxD5hO90V8seTW?usp=sharing]**
 
 ## 📄 Mínimo un ejemplo de la estructura de cada archivo JSON utilizado
-Ojo, este es el esqueleto de UN solo objeto (no integramos varios "arrays" en un mismo archivo, somos ordenados). Así se ve la estructura de un alumno adentro de `data/alumnos.json`:
+Este es el esqueleto de UN solo objeto (no integramos varios "arrays" en un mismo archivo). Así se ve la estructura de un alumno adentro de `data/alumnos.json`:
 ```json
 {
   "legajo": 10001,
@@ -69,8 +69,8 @@ Ojo, este es el esqueleto de UN solo objeto (no integramos varios "arrays" en un
 
 ## 🌐 Link del deploy en Render
 La API ya está subida y laburando en la nube:
-👉 **[Reemplazar por el Link del Deploy en Render]**
+👉 **[https://mozart-wct4.onrender.com/alumnos]**
 
 ## 🖥️ Link al repositorio con el front-end
 *(Si tienen repo para el front-end, manden el link acá)*
-👉 **[Reemplazar por el Link al repositorio del Front-end]**
+👉 **[]**
