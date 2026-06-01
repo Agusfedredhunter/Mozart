@@ -11,7 +11,12 @@ class Server {
   }
 
   middleware () {
+    // cors() es la posta para aceptar peticiones desde otros lados (onda el front)
     this.app.use(cors())
+    
+    // express.json() es CLAVE. Sin esto, Node.js se queda en pampa y la vía y no 
+    // entiende un carajo de los JSON que le mandan por el req.body en los POST y PUT.
+    this.app.use(express.json())
   }
 
   rutas () {
