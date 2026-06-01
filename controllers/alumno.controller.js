@@ -1,5 +1,5 @@
 const fs = require('fs').promises
-const { AlumnoModel } = require('../models/alumno.model')
+const { AlumnoModel } = require('../models/alumno.model.ts')
 
 const getAlumnoAll = async (req, res) => {
   try {
