@@ -10,22 +10,25 @@
 
 ## 🚀 Nombre del proyecto y su descripción
 **API de Gestión de Alumnos - TP4**
-Básicamente, armamos una API RESTful re picante con Node.js, Express y TypeScript. Sirve para gestionar alumnos con todo el combo (CRUD completo). La data la guardamos en un archivo JSON para que quede persistente y no se pierda nada cuando se apaga el server. Le metimos arquitectura MVC y pura Programación Orientada a Objetos (POO) para que el código quede un lujo. Además, le mandamos validaciones piolas con `express-validator` para que nadie mande giladas.
+Básicamente, armamos una API RESTful con Node.js, Express y TypeScript. Sirve para gestionar alumnos con CRUD completo. La data la guardamos en un archivo JSON para que quede persistente y no se pierda nada cuando se apaga el server. Le metimos arquitectura MVC y Programación Orientada a Objetos (POO) para que el código quede con buena cálidad. Además, le mandamos validaciones con `express-validator` para que nadie mande cosas que no correspondan.
 
 ## 🛠️ Metodología de trabajo con Git y GitHub
-Para no pisarnos el código y hacer cagadas, usamos Git y GitHub a full. 
-1. Le mandamos un Fork al repo base del profe.
-2. Cada uno se clonó el repo en su máquina.
-3. Laburamos con el flujo clásico: `pull` para traer los cambios de los pibes, `commit` con mensajes claros, y `push` para subir todo al repo.
+Para no pisarnos el código usamos Git y GitHub. 
+1. Hicimos el Fork al repo base del profe.
+2. Cada uno clonó el repo en su máquina.
+3. Laburamos con el flujo clásico: `pull` para traer los cambios, `commit` con mensajes claros, y `push` para subir todo al repo.
 4. Las juntadas en la rama `main` (merges) se hacían con cuidado para no romper nada antes de mandar el proyecto a producción (deploy).
 
 ## 🗂️ División de los archivos entre los integrantes
 *(Acá completen quién hizo qué, muchachos)*
-- **[Nombre 1]**: Se puso la 10 y armó el `alumno.controller.js` con los métodos GET.
-- **[Nombre 2]**: Le metió garra a los modelos con TypeScript (`alumno.model.ts`) y armó los métodos POST, PUT y DELETE.
-- **[Nombre 3]**: Se encargó de atajar los penales: hizo el Dockerfile, redactó este hermoso README.md y metió el deploy en Render.
-
-## 📂 Distribución de los archivos y carpetas
+- **[Nombre 1]**: 
+- **[Nombre 2]**: 
+- **[Nombre 3]**:
+- **[Nombre 4]**:
+- **[Nombre 5]**:
+- **[Nombre 6]**:
+  
+  ## 📂 Distribución de los archivos y carpetas
 Así organizamos el boliche para que no sea un quilombo:
 ```text
 /controllers   -> Acá está el cerebro de la operación. Tiene la lógica de cada ruta (ej. alumno.controller.js).
