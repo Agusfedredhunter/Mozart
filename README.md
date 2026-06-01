@@ -21,36 +21,36 @@ Para no pisarnos el código usamos Git y GitHub.
 
 ## 🗂️ División de los archivos entre los integrantes
 *(Acá completen quién hizo qué, muchachos)*
-- **[Nombre 1]**: 
-- **[Nombre 2]**: 
-- **[Nombre 3]**:
-- **[Nombre 4]**:
-- **[Nombre 5]**:
-- **[Nombre 6]**:
+- **[Moore Andy]**: controllers/alumno.controller.js, routes/alumno.routes.js
+- **[Lima Jesus]**: models/extras/profesor.model.ts, routes/extras/profesor.routes.js, data/extras/sys-profesores.json, materia.routes.js
+- **[Morel Ramiro]**: app.js, core/server.js
+- **[- Fedigatti Augusto]**: models/extras/nota.model.ts, routes/extras/nota.routes.js, data/extras/sys-notas.json, persistence/
+- **[Pelizza Joaquin]**: middlewares/validar-campos.js, README.md, Dockerfile
+- **[Urdampilleta Iñaki]**: models/persona.model.ts, models/alumno.model.ts
   
   ## 📂 Distribución de los archivos y carpetas
 Así organizamos el boliche para que no sea un quilombo:
 ```text
 /controllers   -> Acá está el cerebro de la operación. Tiene la lógica de cada ruta (ej. alumno.controller.js).
-/core          -> Configuración a prueba de balas de Express y el servidor (server.js).
-/data          -> Nuestra "base de datos" económica, guarda los registros en formato JSON (alumnos.json).
-/middlewares   -> Los patovicas que revisan que la data llegue bien (validar-campos.js con express-validator).
-/models        -> Las clases chetas en TypeScript con POO pura (alumno.model.ts, persona.model.ts).
+/core          -> Configuración de Express y el servidor (server.js).
+/data          -> Nuestra "base de datos", guarda los registros en formato JSON (alumnos.json).
+/middlewares   -> El archivo que revisa si hay errores(validar-campos.js con express-validator).
+/models        -> Las clases en TypeScript con POO(alumno.model.ts, persona.model.ts).
 /routes        -> El mapa de la API. Acá definimos las rutas y validaciones (alumno.routes.js).
-app.js         -> El archivo principal, le das play a este y arranca el motor.
+app.js         -> El archivo principal.
 Dockerfile     -> Para armar el contenedor y que corra igual en la máquina de cualquiera.
 ```
 
 ## 🧠 Un 90% de las funciones explicadas a detalle
-- `getAlumnoAll`: Va a leer el JSON de alumnos (`alumnos.json`) de forma asíncrona. Si todo sale joya, te escupe la lista completa con un `Status 200`. Si hay bardo, te tira un `500`.
-- `getAlumnoById`: Pesca el `id` que mandás por la URL, se pone a buscar al alumno en el arreglo y te lo devuelve. Si no lo juna (no existe), te tira un `404` por la cabeza.
-- `postAlumno`: Agarra la data que viene en el `body`, se fija que el legajo no exista ya (si existe tira `409`). Después pasa la validación de POO instanciando `AlumnoModel`. Si está todo ok, lo empuja al arreglo (`push`), guarda el archivo JSON y te devuelve un `201` (Creado).
-- `putAlumno`: Agarra el `id` de la URL, busca al chabón. Le pisa los datos viejos con los nuevos (sin dejar que modifiques el legajo original). Lo pasa por el filtro de `AlumnoModel` y si pasa la validación, sobreescribe el JSON y tira `200`.
-- `deleteAlumno`: Busca el índice del loquito según el legajo. Le mete un `splice()` fiero para borrarlo del mapa, guarda el JSON actualizado y chau picho (`Status 200`).
-- `validarCampos` (Middleware): Usa `express-validator` para fijarse si alguno de los `check` de las rutas tiró error. Si hay quilombo, corta todo con un `400` antes de que llegue al controlador.
+- `getAlumnoAll`: Va a leer el JSON de alumnos (`alumnos.json`) de forma asíncrona. Si todo sale bien, te suelta la lista completa con un `Status 200`. Sino, te suelta un `500`.
+- `getAlumnoById`: Consigue el `id` que mandás por la URL, se pone a buscar al alumno en el arreglo y te lo devuelve. Si no lo encuentra (no existe), te tira un `404`.
+- `postAlumno`: Agarra los datos que viene en el `body`, se fija que el legajo no exista ya (si existe tira `409`). Después pasa la validación de POO instanciando `AlumnoModel`. Si está todo ok, lo empuja al arreglo (`push`), guarda el archivo JSON y te devuelve un `201` (Creado).
+- `putAlumno`: Agarra el `id` de la URL, busca el alumno. Le pisa los datos viejos con los nuevos (sin dejar que modifiques el legajo original). Lo pasa por el filtro de `AlumnoModel` y si pasa la validación, sobreescribe el JSON y tira `200`.
+- `deleteAlumno`: Busca el índice del alumno según el legajo. Usa `splice()` para borrarlo, guarda el JSON actualizado(`Status 200`).
+- `validarCampos` (Middleware): Usa `express-validator` para fijarse si alguno de los `check` de las rutas tiró error. Si hay errores, corta todo con un `400` antes de que llegue al controlador.
 
 ## 📦 Documentación con 'Postman' de todos los métodos
-Acá está la colección re prolija con todos los métodos (GET, PUT, DELETE, POST) para que los pruebes:
+Acá está la colección con todos los métodos (GET, PUT, DELETE, POST):
 👉 **[Reemplazar por el Link a la colección de Postman publicada]**
 
 ## 📄 Mínimo un ejemplo de la estructura de cada archivo JSON utilizado
