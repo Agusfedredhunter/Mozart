@@ -19,7 +19,7 @@ Armamos una API RESTful con Node.js, Express y TypeScript. Sirve para gestionar 
 Para no pisarnos el código usamos Git y GitHub. 
 1. Hicimos el Fork al repo base del profe.
 2. Cada uno clonó el repo en su máquina.
-3. Laburamos con el flujo clásico: `pull` para traer los cambios, `commit` con mensajes claros, y `push` para subir todo al repo.
+3. Trabajamos con el flujo clásico: `pull` para traer los cambios, `commit` con mensajes claros, y `push` para subir todo al repo.
 4. Las juntadas en la rama `main` (merges) se hacían con cuidado para no romper nada antes de mandar el proyecto a producción (deploy).
 
 ## 🗂️ División de los archivos entre los integrantes
