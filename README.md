@@ -73,7 +73,3 @@ Este es el esqueleto de UN solo objeto (no integramos varios "arrays" en un mism
 ## 🌐 Link del deploy en Render
 La API ya está subida y laburando en la nube:
 👉 **[https://mozart-wct4.onrender.com/alumnos]**
-
-## 🖥️ Link al repositorio con el front-end
-*(Si tienen repo para el front-end, manden el link acá)*
-👉 **[]**
